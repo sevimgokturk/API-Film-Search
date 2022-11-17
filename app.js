@@ -45,6 +45,7 @@ let key ="6c8df01f"
             prev.classList.add("visible");
     }
     //to pass the next page
+    console.log("sevim")
     next.addEventListener("click",()=>{
         if(value==="")return;
         pagenr++;
