@@ -13,7 +13,7 @@ let key ="6c8df01f"
     button.addEventListener("click",()=>{    
         pagenr=1;
         getmovie(value,pagenr);
-        document.getElementById("body").style.backgroundImage = "none";
+    
     });
     async function getmovie(value,p){
         if(value==="") return;

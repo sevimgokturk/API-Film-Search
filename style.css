@@ -47,7 +47,9 @@
     min-height: 10vh;
     display: flex;
     margin-top: 10px;
-    background-color: lightgray;
+    background-color: white; 
+    opacity: .9;
+    padding: 20px;
   }
   .poster {
     display: flex;
