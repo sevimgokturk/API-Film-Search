@@ -24,7 +24,7 @@ let key ="6c8df01f"
         // convert the result to json
         const result = await data.json();
         console.log(result);
-        //in the response ther is a Search data, under the search we can acces the info like year, imdb post, title
+        //in the response there is a Search data, under the search we can acces the info like year, imdb post, title
         result.Search. forEach( (item) => {
             let moviediv = document.createElement ("div") ;
             moviediv.classList.add("movie");
@@ -33,7 +33,7 @@ let key ="6c8df01f"
             let img = document.createElement("img") ;
         // if inside the fetch data ther is no Ppster (image, not available:N/A) use this photo
             img.src=
-            item. Poster === "N/A" ? (img.src = "./img/nopic.jpg") :item.Poster;
+            item. Poster === "N/A" ? (img.src = "./img/42862.jpg") :item.Poster;
             poster.appendChild(img);
             moviediv.appendChild(poster);
             let description = document.createElement("div");
