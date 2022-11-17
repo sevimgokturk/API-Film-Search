@@ -34,7 +34,7 @@ let key ="6c8df01f"
             let img = document.createElement("img") ;
         // if inside the fetch data ther is no Ppster (image, not available:N/A) use this photo
             img.src=
-            item. Poster === "N/A" ? (img.src = "./img/42862.jpg") :item.Poster;
+            item. Poster === "N/A" ? (img.src = "./pictures/42862.jpg") :item.Poster;
             poster.appendChild(img);
             moviediv.appendChild(poster);
             let description = document.createElement("div");
