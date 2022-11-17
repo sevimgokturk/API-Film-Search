@@ -45,6 +45,7 @@ let key ="6c8df01f"
             prev.classList.add("visible");
     }
     //to pass the next page
+    //some notes???
     next.addEventListener("click",()=>{
         if(value==="")return;
         pagenr++;
