@@ -10,9 +10,10 @@ let key ="6c8df01f"
     e.preventDefault();
     value=input.value; 
     });
-    button.addEventListener("click",()=>{
+    button.addEventListener("click",()=>{    
         pagenr=1;
         getmovie(value,pagenr);
+        document.getElementById("body").style.backgroundImage = "none";
     });
     async function getmovie(value,p){
         if(value==="") return;
@@ -57,3 +58,5 @@ let key ="6c8df01f"
         pagenr--;
         getmovie(value,pagenr)
     });
+
+  
