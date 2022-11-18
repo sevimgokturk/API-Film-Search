@@ -106,3 +106,17 @@
   .visible {
     opacity: 1;
   }
+  @media(max-width: 800px) {
+    .description{
+      font-size: 1em;
+    }
+  }
+  @media(max-width: 400px) {
+    a{
+      font-size: 0.5em; 
+    }
+    img{
+      height: 100px;
+      width: 100px;
+    }
+  }

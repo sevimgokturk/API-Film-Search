@@ -6,13 +6,13 @@ let key ="6c8df01f"
 
     let value="";
     let pagenr=1;
-    //asigne the input value
+    //with eventListiner we asigne the input value
     input.addEventListener("input", (e)=>{
     e.preventDefault();
     value=input.value; 
     });
 
-    //we add event listener to make active the getmovie function
+    //we add event listener to call the getmovie function
     input.addEventListener("keyup", function(event) {
         event.preventDefault();
         if (event.keyCode === 13) {
@@ -20,7 +20,7 @@ let key ="6c8df01f"
         }
     });
 
-    //ane also we can make active the getmovie function withe button
+    //ane also we can call getmovie function withe button
     button.addEventListener("click",()=>{    
         pagenr=1;
         getmovie(value,pagenr);
