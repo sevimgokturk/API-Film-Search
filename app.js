@@ -61,7 +61,8 @@ let key ="6c8df01f"
             moviediv.appendChild(poster);
             let description = document.createElement("div");
             description.classList.add ("description") ;
-            description.innerHTML= "Title :"+item.Title +"<br><br>"+"Year :" +item.Year+"<br><br>" + "<a href=https://www.imdb.com/title/"+item.imdbID+">IMDB:"+ "https://www.imdb.com/title/"+item.imdbID+"</a> "
+            description.innerHTML= "Title :"+item.Title +"<br><br>"+"Year :" +item.Year+"<br><br>" + "<a target='_blank' href=https://www.imdb.com/title/"+item.imdbID+" >IMDB:"+ "https://www.imdb.com/title/"+item.imdbID+"</a> "
+            
             moviediv.appendChild(description);
             document.querySelector(".display").appendChild(moviediv);});
 
