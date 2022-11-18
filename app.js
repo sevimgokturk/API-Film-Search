@@ -6,7 +6,7 @@ let key ="6c8df01f"
 
     let value="";
     let pagenr=1;
-    //asigne the input vatue
+    //asigne the input value
     input.addEventListener("input", (e)=>{
     e.preventDefault();
     value=input.value; 
@@ -24,7 +24,7 @@ let key ="6c8df01f"
     button.addEventListener("click",()=>{    
         pagenr=1;
         getmovie(value,pagenr);
-        document.getElementById("body").style.backgroundImage = "none";
+        
     });
 
     //we use asencronic function  because it is necesserie to wait fetch data. 
@@ -43,7 +43,7 @@ let key ="6c8df01f"
 
         // convert the result to json also we add await
         const result = await data.json();
-        console.log(result);
+        
 
         //in the response there is a Search data, under the search we can acces the info like year, imdb post, title
         //with  this loop we create the posters and the descriptions for each item of the result 
@@ -64,7 +64,10 @@ let key ="6c8df01f"
             description.innerHTML= "Title :"+item.Title +"<br><br>"+"Year :" +item.Year+"<br><br>" + "<a href=https://www.imdb.com/title/"+item.imdbID+">IMDB:"+ "https://www.imdb.com/title/"+item.imdbID+"</a> "
             moviediv.appendChild(description);
             document.querySelector(".display").appendChild(moviediv);});
+
             //we are making visible the net and previus buttons
+            //We gave opacity 0 for next and prev buttons in css by default,  as we don't want to see these buttons in the first "blank page"
+            //when we receive the results after the first search then next and prev button will be visible.
             next.classList.add("visible");
             prev.classList.add("visible");
     }
